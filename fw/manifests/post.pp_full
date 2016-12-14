@@ -1,0 +1,15 @@
+# MAY Profile Base
+
+class profile::base {
+	include auto
+        include motd
+	include ntp
+	include timezone
+	include rsyslog::client
+	include sysctl::base
+        include resolvconf
+	include stdlib
+#       include auto
+	include fw::post
+	include fw::pre
+}

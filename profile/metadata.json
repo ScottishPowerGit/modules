@@ -1,8 +1,8 @@
 {
-  "name": "may-profile",
-  "version": "0.0.3"
+  "name": "SP--profile",
+  "version": "0.0.4"
   "author": "may",
-  "summary": "MAY Puppet Profiles",
+  "summary": "Puppet Profiles",
   "license": "BSD 2.0",
   "source": "",
   "project_page": null,

@@ -54,7 +54,23 @@ class fw::pre {
     dport    => '80',
     proto    => 'tcp',
     action   => 'accept',
-  }  
+  }
+
+  firewall { '100 allow all ssh access':
+    chain    => 'OUTPUT',
+    state    => ['NEW'],
+    dport    => '22',
+    proto    => 'tcp',
+    action   => 'accept',
+  }
+  
+  firewall { '100 allow http and https acces':
+    chain    => 'OUTPUT',
+    state    => ['NEW'],
+    dport    => ['80', '443'],
+    proto    => 'tcp',
+    action   => 'accept',
+  }
 
 }
 
